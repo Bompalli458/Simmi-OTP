@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SIMMI OTP</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="name">Name</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="todo">TODO</string>
+    <string name="enter_4_digit_otp">Enter 4 digit OTP</string>
+    <string name="verify">Verify</string>
+    <string name="otp_verification">OTP VERIFICATION</string>
+    <string name="_0">0</string>
+</resources>

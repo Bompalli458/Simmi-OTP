@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyOTP">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/usercredentials"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="100dp"
+            android:textSize="18sp" />
+
+        <ImageView
+
+            android:id="@+id/otpimgid"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginBottom="50dp"
+
+            android:src="@drawable/otpimg"
+            tools:ignore="ContentDescription,MissingConstraints"
+            tools:layout_editor_absoluteX="167dp"
+            tools:layout_editor_absoluteY="84dp" />
+
+        <TextView
+            android:id="@+id/otptxt"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/otpimgid"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/enter_4_digit_otp"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:id="@+id/llid"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/otptxt"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:hint="@string/_0"
+                android:id="@+id/edt1"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_stroke"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingStart="15dp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                tools:ignore="Suspicious0dp" />
+
+            <EditText
+                android:hint="0"
+                android:id="@+id/edt2"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_stroke"
+                android:inputType="number"
+                android:paddingStart="15dp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                tools:ignore="Suspicious0dp"
+                android:autofillHints="" />
+
+            <EditText
+                android:hint="0"
+                android:id="@+id/edt3"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_stroke"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                tools:ignore="Suspicious0dp" />
+
+            <EditText
+                android:id="@+id/edt4"
+                android:hint="0"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_stroke"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                tools:ignore="Suspicious0dp" />
+            <EditText
+                android:id="@+id/edt5"
+                android:hint="0"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_stroke"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                tools:ignore="Suspicious0dp" />
+            <EditText
+                android:id="@+id/edt6"
+                android:hint="0"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_stroke"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                tools:ignore="Suspicious0dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/llid"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Didn't receive otp "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textresendOTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:padding="10dp"
+                android:text="Resend OTP "
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@+id/ll2">
+
+            <Button
+                android:id="@+id/verifyid"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/ll2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="103dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/button_stroke"
+                android:text="@string/verify"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <ProgressBar
+                android:id="@+id/verifyProgressbar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="40dp" />
+
+        </FrameLayout>
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

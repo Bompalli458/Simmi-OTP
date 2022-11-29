@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimmiRegistration">
+
+
+    <ImageView
+        android:id="@+id/simmilogoid"
+        android:layout_width="165dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/simmilogo"
+        app:layout_constraintBottom_toTopOf="@id/nameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="@string/todo"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="350dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="32dp"
+        android:background="#2B2B2B"
+        android:padding="1dp"
+        android:textColor="@color/red"
+        android:textColorHint="#BDB5B5"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:hint="@string/name"
+            android:padding="10dp"
+            android:textColor="#101010"
+            android:textColorHint="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/simmilogoid" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mobilenumberLayout"
+        android:layout_width="350dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="32dp"
+        android:background="#2B2B2B"
+        android:padding="1dp"
+        android:textColorHint="#BDB5B5"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.232"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mobilenumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:hint="@string/mobile_number"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/red"
+            android:textColorHint="#fff"
+android:imeOptions="actionDone"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/generateOTPButton"
+        android:layout_width="317dp"
+        android:layout_height="0dp"
+        android:layout_margin="25dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_stroke"
+        android:text="@string/generate_otp"
+        android:textColor="#0E0E0E"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/mobilenumberLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mobilenumberLayout"
+        app:layout_constraintTop_toBottomOf="@+id/mobilenumberLayout" />
+
+    <ProgressBar
+        android:id="@+id/registerprogressbar"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/generateOTPButton"
+        app:layout_constraintVertical_bias="0.103"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "332445802205",
+    "project_id": "simmi-otp",
+    "storage_bucket": "simmi-otp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332445802205:android:79c6fd647b81124b6b8534",
+        "android_client_info": {
+          "package_name": "com.example.simmiotp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332445802205-lqog2pbscue9kkvrhgdep06ntqem0g6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkw3TeCC8Afi-94j92jV0Q9vMIwUg0_B0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332445802205-lqog2pbscue9kkvrhgdep06ntqem0g6k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
